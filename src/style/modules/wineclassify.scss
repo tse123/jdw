@@ -1,0 +1,67 @@
+.wineClassifywrap{
+    width:100%;
+    height:100%;
+    background:white;
+    .wineTopimg{
+        width:100%;
+        height:0.6rem;
+        padding:5px;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+    .wineBox{
+        width:100%;
+        padding-left:5px;
+        .winelistTip,.wineotherlistTip{
+            width:100%;
+            height:27px;
+            font-size:14px;
+            background:#E9E9E9;
+            span{
+                display:block;
+                height:14px;
+                border-left:solid 5px #7f06b7;
+                text-indent:10px;
+                line-height:14px;
+                float:left;
+                margin-top:6px;
+            }
+        }
+        .wineList{
+            width:100%;
+            height:auto;
+            overflow:hidden;
+            li{
+                width:33%;
+                height:0.74rem;
+                overflow:hidden;
+                float:left;
+                @include flexbox();
+                @include justify-content(center);
+                @include align-items(center);
+                @include flex-direction(column);
+                img{
+                   width:0.4rem;
+                   height:0.4rem; 
+                }
+                p{
+                    text-align:center;
+                }
+            }
+        }
+        .otherList{
+            width:100%;
+            height:auto;
+            overflow:hidden;
+            li{
+                width:33%;
+                height:30px;
+                text-align:center;
+                line-height:30px;
+                float:left;
+            }
+        }
+    }
+}

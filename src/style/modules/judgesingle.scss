@@ -1,0 +1,77 @@
+.info3List{
+                    width:100%;
+                    height:auto;
+                    .info3Li{
+                        width:100%;
+                        height:auto;
+                        display:block;
+                        padding-bottom: 10px;
+                        @include border(0 0 1px 0);
+                        .info3liTop{
+                            height:30px;
+                            .p1{
+                                float:left;
+                                margin-left:0.1rem;
+                                span:nth-of-type(1){
+                                    float:left;
+                                    height:30px;
+                                    line-height:30px;
+                                }
+                                span:nth-of-type(2){
+                                    float:left;
+                                    height:16px;
+                                    line-height:16px;
+                                    background: #e58b16;
+                                    color:white;
+                                    padding:0 5px;
+                                    margin-top:7px;
+                                    margin-left:10px;
+                                }
+                            }
+                            .p2{
+                                float:right;
+                                height:30px;
+                                line-height:30px;
+                                margin-right:0.1rem;
+                            }
+                        }
+                        .yo-rating-star{
+                            height:12px;
+                            overflow: hidden;
+                            margin-left:0.1rem;
+                            margin-top:5px;
+                            margin-bottom:5px;
+                            .item{
+                                height:12px;
+                                width:12px;
+                                span{
+                                    height:12px;
+                                }
+                            }
+                        }
+                        .pInfo{
+                            width:3rem;
+                            margin-left:0.1rem;
+                            line-height:20px;
+                            
+                        }
+                        .imgBox{
+                            width:2.8rem;
+                            height:auto;
+                            overflow: hidden;
+                            margin-left:0.2rem;
+                            
+                            div{
+                                width:0.7rem;
+                                height:0.7rem;
+                                float:left;
+                                overflow: hidden;
+                                img{
+                                    width:0.7rem;
+                                    height:0.7rem;
+                                    display:block;
+                                }
+                            }
+                        }
+                    }
+                }

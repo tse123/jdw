@@ -1,0 +1,219 @@
+//轮播图
+.swiperWrap{
+    .cont{
+        .item{
+            .img{
+                height:1.66rem;
+            }
+        }
+    }
+    .index{
+        li{
+            width:8px;
+            height:8px;
+            background:rgba(0,0,0,0.6);
+        }
+    }
+}
+
+//menu菜单
+.menuList{
+    width:3.2rem;
+    height:1.7rem;
+    li{
+        float:left;
+        width:0.8rem;
+        height:0.85rem;
+        overflow:hidden;
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(center);
+        text-align:center;
+        @include align-items(center);
+        img{
+            width:0.36rem;
+            height:0.36rem;
+        }
+        p{
+            margin-top:0.05rem;
+        }
+    }
+}
+//手机秒杀块
+.infoTip{
+    width:100%;
+    height:46px;
+    @include border(1px 0 1px 0);
+    p{
+        height:46px;
+        float:left;
+        line-height:46px;
+        font-size:14px;
+    }
+    p:nth-of-type(1){
+        margin-left:0.1rem;
+        height:14px;
+        line-height:14px;
+        margin-top:16px;
+        text-indent:5px;
+        border-left:solid 2px #BD2C00;
+    }
+    p:nth-of-type(2){
+        margin-left:0.1rem;
+        height:14px;
+        line-height:14px;
+        margin-top:16px;
+    }
+    p:nth-of-type(3){
+        float:right;
+        margin-right:0.1rem;
+        height:14px;
+        line-height:14px;
+        margin-top:16px;
+    }
+} 
+//手机抢购区
+.scareBuy{
+    width:100%;
+    height:1.7rem;
+    overflow-x: scroll;
+    .scareList{
+        width:6.4rem;
+        height:1.7rem;
+        li{
+            width:1.05rem;
+            height:1.7rem;
+            float:left;
+            overflow: hidden;
+            padding-top:0.1rem;
+            img{
+                width:0.8rem;
+                height:0.8rem;
+                margin-left:0.12rem;
+                
+            }
+            .p1{
+                width:0.8rem;
+                height:0.32rem;
+                line-height:0.16rem;
+                font-size:0.12rem;
+                margin-left:0.12rem;
+                @include ellipsis(null,2);
+            }
+            .p2{
+                width:0.8rem;
+                height:0.2rem;
+                line-height:0.2rem;
+                margin-left:0.12rem;
+                color:#ac202;
+            }
+            .p3{
+                width:0.8rem;
+                height:0.2rem;
+                line-height:0.14rem;
+                margin-left:0.12rem;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+.whitePub{
+    width:100%;
+    height:1.7rem;
+    .whiteImg{
+        width:100%;
+        height:0.38rem;
+    }
+    .whiteList{
+        width:100%;
+        height:1.26rem;
+        @include flexbox();
+        @include flex-direction(row);
+        li{
+            overflow: hidden;
+            @include flex(1);
+            img{
+                width:100%;
+            }
+            p{
+                text-align: center;
+                height:0.2rem;
+                line-height:0.2rem;
+            }
+        }
+    }
+}
+.poster{
+    width:100%;
+    height:auto;
+    @include flexbox();
+    @include flex-direction(column);
+    .posterTop{
+        width:100%;
+        height:0.75rem;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+    .posterList{
+        margin-top:0.1rem;
+        width:100%;
+        height:1.06rem;
+        @include flexbox();
+        li{
+            @include flex(1);
+            height:100%;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+    }
+}
+.salewhiteList{
+    width:100%;
+    overflow:hidden;
+    li{
+        width:50%;
+        float:left;
+        height:2.44rem;
+        overflow:hidden;
+        img{
+            width:1.58rem;
+            height:1.58rem;
+        }
+        .divInfo{
+            width:1.38rem;
+            height:0.36rem;
+            line-height:0.18rem;
+            @include ellipsis(1.38rem,2);
+        }
+        .divCli{
+            width:100%;
+            height:0.4rem;
+            line-height:0.4rem;
+            color:#fc2236;
+            span:nth-of-type(1){
+                float:left;
+                margin-left:0.1rem;
+            }
+            span:nth-of-type(2){
+                float:right;
+                width:0.26rem;
+                height:0.26rem;
+                text-align:center;
+                line-height:0.26rem;
+                margin-right:0.3rem;
+                font-size:0.12rem;
+                background:#fc2236;
+                color:white;
+                border-radius:50%;
+                i{
+                    transform:scale(0.6);
+                }
+            }
+        }
+    }
+}
+
